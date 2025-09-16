@@ -25,6 +25,6 @@ import Tile from './Tile.vue'
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 16px;
+  gap: 16px; background-color: #9A9F86;
 }
 </style>

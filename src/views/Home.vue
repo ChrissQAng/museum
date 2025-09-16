@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Willkommen im Museum</h1>
+    <h1>Willkommen im Siebold Museum</h1>
     <TileGrid />
   </div>
 </template>

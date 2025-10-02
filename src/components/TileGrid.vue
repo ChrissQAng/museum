@@ -6,7 +6,7 @@
         v-for="(d,i) in objectText"
         :key="i"
         :number="i"
-        :text="'Tile ' + i"
+        :text=objectText[i][1]+objectText[i][2]
         :link="'/detail/' + i"
       />
     </div>
@@ -23,7 +23,7 @@ onMounted(() => {
   fetch('/test01.csv')
     .then(response => response.text())
     .then(csvText => {
-      console.log("csvText:", csvText);
+
       objectText.value = Papa.parse(csvText, {
         header: false,
         skipEmptyLines: true
@@ -33,7 +33,7 @@ onMounted(() => {
     .catch(error => {
       console.error('Error fetching or parsing CSV:', error);
     });
-  // console.log("objectText:", objectText.value);
+
 });
 
 </script>

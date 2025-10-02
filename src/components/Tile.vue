@@ -21,7 +21,7 @@ const props = defineProps({
   <div class="tile">
     <h3>{{ number }}</h3>
     <p>{{ text }}</p>
-    <a :href="link">Details</a>
+    <router-link :to="link">Details</router-link>
   </div>
 </template>
 

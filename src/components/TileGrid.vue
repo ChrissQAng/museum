@@ -1,9 +1,9 @@
 <template>
   <div class="tile-grid">
-    <h1>Tile Grid</h1>
+    <h1>Vitrine 1</h1>
     <div class="grid">
       <Tile
-        v-for="i in 27"
+        v-for="(d,i) in objectText"
         :key="i"
         :number="i"
         :text="'Tile ' + i"
@@ -15,6 +15,27 @@
 
 <script setup>
 import Tile from './Tile.vue'
+import { ref, onMounted } from 'vue';
+import Papa from 'papaparse';
+const objectText= ref([]);
+
+onMounted(() => {
+  fetch('/test01.csv')
+    .then(response => response.text())
+    .then(csvText => {
+      console.log("csvText:", csvText);
+      objectText.value = Papa.parse(csvText, {
+        header: false,
+        skipEmptyLines: true
+      }).data;
+      console.log("objectText:", objectText.value);
+    })
+    .catch(error => {
+      console.error('Error fetching or parsing CSV:', error);
+    });
+  // console.log("objectText:", objectText.value);
+});
+
 </script>
 
 <style scoped>

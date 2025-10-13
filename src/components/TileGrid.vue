@@ -5,8 +5,8 @@
       <Tile
         v-for="(d,i) in objectText"
         :key="i"
-        :number="i"
-        :text=objectText[i][1]+objectText[i][2]
+        :number=objectText[i][1]
+        :text=objectText[i][2]
         :link="'/detail/' + i"
       />
     </div>
@@ -23,7 +23,6 @@ onMounted(() => {
   fetch('/test01.csv')
     .then(response => response.text())
     .then(csvText => {
-
       objectText.value = Papa.parse(csvText, {
         header: false,
         skipEmptyLines: true
@@ -45,7 +44,7 @@ onMounted(() => {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 16px; background-color: #9A9F86;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px; background-color: ;
 }
 </style>

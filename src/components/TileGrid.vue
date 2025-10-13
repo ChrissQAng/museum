@@ -7,6 +7,8 @@
         :key="i"
         :number=objectText[i][1]
         :text=objectText[i][2]
+        :textEN=objectText[i][3]
+        :textJP=objectText[i][4]
         :link="'/detail/' + i"
       />
     </div>
@@ -45,6 +47,6 @@ onMounted(() => {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px; background-color: ;
+  gap: 16px;
 }
 </style>

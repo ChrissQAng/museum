@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from 'vue';
+import { store } from '../stores/objectStore';
 
 const props = defineProps({
   number: {
@@ -10,15 +11,32 @@ const props = defineProps({
     type: String,
     required: true
   },
+  textEN: {
+    type: String,
+    required: true
+  },
+  textJP: {
+    type: String,
+    required: true
+  },
   link: {
     type: String,
     required: true
   }
 });
+
+const handleClick = () => {
+  store.setSelectedObject({
+    number: props.number,
+    text: props.text,
+    textEN: props.textEN,
+    textJP: props.textJP
+  });
+}
 </script>
 
 <template>
-  <router-link :to="link">
+  <router-link :to="link" @click="handleClick">
   <div class="tile">
     <h3 class="tile-number">{{ number }}</h3>
     <p class="tile-text">{{ text }}</p>

@@ -1,20 +1,16 @@
 <template>
   <div class="detail">
-    <h1>Detailseite {{ id }}</h1>
-    <p>Hier sind die Details zur ausgewählten Kachel.</p>
+    <h1>Detailseite {{ store.selectedObject?.number }}</h1>
+    <p>{{ store.selectedObject?.text }}</p>
+    <p>{{ store.selectedObject?.textEN }}</p>
+    <p>{{ store.selectedObject?.textJP }}</p>
+    
     <router-link to="/">Zurück zur Startseite</router-link>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-
-const props = defineProps({
-  id: {
-    type: String,
-    required: true
-  }
-});
+import { store } from '../stores/objectStore';
 </script>
 
 <style scoped>

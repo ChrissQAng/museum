@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <h1>Willkommen im Siebold Museum</h1>
     <img src="../../public/museumBanner.jpg" alt="Banner Siebold Museum">
     <TileGrid />
@@ -11,6 +11,9 @@ import TileGrid from '../components/TileGrid.vue'
 </script>
 
 <style scoped>
+.home {
+background-color: #9A9F86
+}
 h1 {
   text-align: center;
   margin-bottom: 20px;

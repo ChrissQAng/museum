@@ -44,11 +44,9 @@ const handleClick = () => {
   </div>
   </router-link>
 </template>
-
 <style scoped>
 .tile {
-  border: 1px solid black;
-  border-radius: 8px;
+  border: 1px solid white;
   padding: 0px 16px;
   margin: 6px;
   text-align: center;
@@ -70,7 +68,4 @@ a {
   margin-bottom: 8px;
   background-color: white;
 }
-
-
-
 </style>

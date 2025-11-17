@@ -36,14 +36,17 @@ const handleClick = () => {
 </script>
 
 <template>
-  <router-link :to="link" @click="handleClick">
+ 
   <div class="tile">
+  <router-link :to="link" @click="handleClick">
     <h3 class="tile-number">{{ number }}</h3>
     <p class="tile-text">{{ text }}</p>
     
-  </div>
   </router-link>
+</div>
+ 
 </template>
+
 <style scoped>
 .tile {
   border: 1px solid white;
@@ -62,6 +65,7 @@ const handleClick = () => {
 a {
   text-decoration: none;
   color: inherit;
+  
 }
 .tile-number {
   font-size: 1.8em;

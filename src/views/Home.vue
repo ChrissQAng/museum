@@ -13,7 +13,7 @@ import TileGrid from '../components/TileGrid.vue'
 <style scoped>
 .home {
 background-color: #9A9F86;
-padding: 2%;
+/* padding: 2%; */
 }
 h1 {
   text-align: center;

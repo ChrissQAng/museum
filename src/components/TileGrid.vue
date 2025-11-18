@@ -1,6 +1,6 @@
 <template>
   <div class="tile-grid">
-    <h1>Vitrine 1</h1>
+    <h3>Vitrine 1</h3>
     <div class="grid">
       <Tile
         v-for="(d,i) in objectText"
@@ -42,11 +42,20 @@ onMounted(() => {
 <style scoped>
 .tile-grid {
   padding: 20px;
+  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
 }
-
+h3 {
+  font-size: 1.9rem;
+  background-color: white;
+  margin-left: 0.3rem;
+  border: 0.0625rem solid #ccc;
+  padding: 0.375rem;
+  display: inline-block;
+  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 1rem;
 }
 </style>

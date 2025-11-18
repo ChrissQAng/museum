@@ -55,6 +55,7 @@ const handleClick = () => {
   text-align: center;
   transition: transform 0.2s;
   background-color: white;
+  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
 }
 .tile:hover {
   transform: scale(1.05);

@@ -19,6 +19,7 @@ import { store } from '../stores/objectStore';
 .detail-view {
 background-color: #9A9F86;
 height: 100vh;
+box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
 }
 .detail-view a{
   position: relative;
@@ -28,9 +29,10 @@ height: 100vh;
   transform: translate(-50%, -50%);
   padding: 2vh 2vh;
   background-color: white;
+  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
   text-decoration: none;
   color: black;
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .detail {
 border: 1px solid white;
@@ -43,6 +45,7 @@ border: 1px solid white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
 }
 .detail p, h1 {
   background-color: white ;

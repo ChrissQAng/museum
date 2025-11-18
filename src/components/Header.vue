@@ -12,7 +12,7 @@
 </template>
 <style>
 header {
-    height: 10vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: row;
 justify-content: space-around;
@@ -32,7 +32,6 @@ h2 {
     display: blo;
 }
 img {
-  height: 7vh;
-
+  height: 6rem;
 }
 </style>

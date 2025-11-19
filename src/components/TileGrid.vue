@@ -42,7 +42,6 @@ onMounted(() => {
 <style scoped>
 .tile-grid {
   padding: 20px;
-  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
 }
 h3 {
   font-size: 1.9rem;

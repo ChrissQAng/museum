@@ -12,7 +12,7 @@
 </template>
 <style>
 header {
-    min-height: 10vh;
+    min-height: 12vh;
     display: flex;
     flex-direction: row;
 justify-content: space-around;

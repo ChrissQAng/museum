@@ -51,7 +51,7 @@ h3 {
   border: 0.0625rem solid #ccc;
   padding: 0.375rem;
   display: inline-block;
-  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
+  box-shadow: 5px 5px 20px 0px rgba(51, 51, 51, 0.77);
 }
 .grid {
   display: grid;

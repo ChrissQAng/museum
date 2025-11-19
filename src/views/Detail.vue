@@ -19,7 +19,7 @@ import { store } from '../stores/objectStore';
 .detail-view {
 background-color: #9A9F86;
 height: 100vh;
-box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
+box-shadow: 5px 5px 20px 0px rgba(51, 51, 51, 0.77);
 }
 .detail-view a{
   position: relative;
@@ -29,7 +29,7 @@ box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
   transform: translate(-50%, -50%);
   padding: 2vh 2vh;
   background-color: white;
-  box-shadow: 10px 10px 25px 0px rgba(51, 51, 51, 0.77);
+  box-shadow: 5px 5px 20px 0px rgba(51, 51, 51, 0.77);
   text-decoration: none;
   color: black;
   font-size: 2rem;
@@ -54,6 +54,8 @@ border: 1px solid white;
 }
 p {
   padding: 2% 0;
-
+}
+h1 {
+  font-family: Arial, sans-serif;
 }
 </style>
